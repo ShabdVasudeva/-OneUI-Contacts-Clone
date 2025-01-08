@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/oui_background_color"
+    android:fitsSystemWindows="true"
+    tools:context=".InfoActivity"
+    tools:ignore="AppCompatResource">
+
+    <dev.oneuiproject.oneui.layout.ToolbarLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:expanded="false"
+        app:expandable="false"
+        android:id="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:id="@+id/photo"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="25.5sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:id="@+id/name" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:id="@+id/call"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_oui_call" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="call" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:id="@+id/text"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_oui_mms" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:id="@+id/video"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_oui_message_send" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="whatsapp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <dev.oneuiproject.oneui.widget.Separator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Contact info" />
+
+            <dev.oneuiproject.oneui.widget.RoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/oui_background_color"
+                android:gravity="center"
+                android:padding="16dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/phoneNumber">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_height="34.0dip"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="34.0dip">
+
+                                <ImageView
+                                    android:layout_height="24.0dip"
+                                    android:layout_width="24.0dip"
+                                    android:src="@drawable/ic_oui_call"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_height="17dip"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/number" />
+
+                                <TextView
+                                    android:layout_height="17dip"
+                                    android:layout_width="match_parent"
+                                    android:text="Mobile • Default" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_height="34.0dip"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="34.0dip">
+
+                                <ImageView
+                                    android:layout_height="24.0dip"
+                                    android:layout_width="24.0dip"
+                                    android:src="@drawable/ic_oui_email_outline"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_height="match_parent"
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_height="17dip"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/mailText" />
+
+                                <TextView
+                                    android:layout_height="17dip"
+                                    android:layout_width="match_parent"
+                                    android:text="Email • Default" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </dev.oneuiproject.oneui.widget.RoundLinearLayout>
+
+        </LinearLayout>
+
+    </dev.oneuiproject.oneui.layout.ToolbarLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

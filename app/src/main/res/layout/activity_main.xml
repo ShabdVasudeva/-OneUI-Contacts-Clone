@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/oui_background_color"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:ignore="AppCompatResource">
+    
+    <dev.oneuiproject.oneui.layout.ToolbarLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:title="Contacts"
+        app:expanded="false"
+        android:id="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SeslProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/progress"
+                android:indeterminate="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:background="@color/oui_background_color" />
+
+            <androidx.indexscroll.widget.SeslIndexScrollView
+                android:id="@+id/indexscroll_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        
+    </dev.oneuiproject.oneui.layout.ToolbarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/ic_oui_add"
+        android:backgroundTint="@color/fab_back"
+        android:contentDescription="new contact"
+        android:layout_margin="16dp"
+        android:id="@+id/fab"
+        app:borderWidth="0dp"
+        android:animateLayoutChanges="true"
+        app:tint="@color/oui_btn_colored_background"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:layout_gravity="end|bottom"
+        android:text="Create New" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

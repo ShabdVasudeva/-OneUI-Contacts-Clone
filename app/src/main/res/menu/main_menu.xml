@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource">
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:visible="true"
+        android:icon="@drawable/ic_oui_search"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/starred"
+        android:title="Starred"
+        android:visible="true"
+        android:icon="@drawable/ic_oui_star_outline"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/refresh"
+        android:title="refresh contacts"
+        app:showAsAction="never" />
+
+</menu>

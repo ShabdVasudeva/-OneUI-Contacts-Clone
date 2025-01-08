@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="contact_back">#EFEFEF</color>
+    <color name="fab_back">@color/oui_background_color</color>
+</resources>

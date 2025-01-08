@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource">
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh"
+        android:visible="true"
+        android:icon="@drawable/ic_oui_refresh"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:visible="true"
+        android:icon="@drawable/ic_oui_settings_outline"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+    
+</menu>

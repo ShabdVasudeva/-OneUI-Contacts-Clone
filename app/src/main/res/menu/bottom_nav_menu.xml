@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_oui_edit_outline"
+        android:title="Edit"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_oui_share_outline"
+        android:title="Share"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/fav"
+        android:icon="@drawable/ic_oui_star_outline"
+        android:title="Favourite"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mail"
+        android:icon="@drawable/ic_oui_email_outline"
+        android:title="Compose"
+        app:iconTint="?actionMenuTextColor"
+        app:showAsAction="always" />
+</menu>
